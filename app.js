@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // State
     let state = {
-        title: "Weekly Sync",
+        title: "Weekly Agenda",
         date: new Date().toISOString().split('T')[0],
         topics: [
             {
@@ -206,3 +206,4 @@ document.addEventListener('DOMContentLoaded', () => {
         return card;
     }
 });
+
