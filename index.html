@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <input type="text" id="meetingTitle" class="title-input" placeholder="Meeting Title"
+                    value="Weekly Sync">
+                <input type="date" id="meetingDate" class="date-input">
+            </div>
+            <div class="header-actions no-print">
+                <button id="saveJsonBtn" class="btn btn-secondary" title="Download Backup"><i
+                        class="fa-solid fa-download"></i> Save File</button>
+                <label for="loadJsonInput" class="btn btn-secondary" title="Load Backup"><i
+                        class="fa-solid fa-upload"></i> Load File</label>
+                <input type="file" id="loadJsonInput" accept=".json" hidden>
+                <button id="exportPdfBtn" class="btn btn-primary"><i class="fa-solid fa-print"></i> Export PDF</button>
+            </div>
+        </header>
+
+        <main id="agendaContainer" class="agenda-container">
+            <!-- Topics will be injected here -->
+        </main>
+
+        <div class="add-topic-wrapper no-print">
+            <button id="addTopicBtn" class="btn btn-dashed"><i class="fa-solid fa-plus"></i> Add New Topic</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
